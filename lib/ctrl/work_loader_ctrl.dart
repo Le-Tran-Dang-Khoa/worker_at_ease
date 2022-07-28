@@ -4,7 +4,7 @@ import 'worker.dart';
 class WorkLoaderCtrl extends LoaderCtrl {
   WorkLoaderCtrl() : super();
 
-  void reloadAsync(List<Worker>? workers) async {
+  void reload(List<Worker>? workers) {
     total = (workers ?? []).length;
     progress = 0;
     if (workers != null) {
