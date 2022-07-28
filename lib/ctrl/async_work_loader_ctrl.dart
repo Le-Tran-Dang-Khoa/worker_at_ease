@@ -6,7 +6,7 @@ import 'async_loader_ctrl.dart';
 class AsyncWorkLoaderCtrl extends AsyncLoaderCtrl with Observer<bool> {
   AsyncWorkLoaderCtrl() : super();
 
-  void reloadAsync(
+  Future<void> reloadAsync(
     List<AsyncWorker<bool>>? asyncWorkers, {
     bool waitAsync = false,
   }) async {
