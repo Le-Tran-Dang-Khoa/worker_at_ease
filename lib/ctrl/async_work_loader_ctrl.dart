@@ -1,9 +1,9 @@
 import 'package:observer_at_ease/observer_at_ease.dart';
 
 import 'async_worker.dart';
-import 'loader_ctrl.dart';
+import 'async_loader_ctrl.dart';
 
-class AsyncWorkLoaderCtrl extends LoaderCtrl with Observer<bool> {
+class AsyncWorkLoaderCtrl extends AsyncLoaderCtrl with Observer<bool> {
   AsyncWorkLoaderCtrl() : super();
 
   void reloadAsync(
